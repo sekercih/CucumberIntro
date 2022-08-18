@@ -3,7 +3,7 @@ Feature: US102 Backgroun ile amazon search testi
 
   Background: amazon sayfasina gider
     Given kullanici amazon sayfasına gider
-
+#Background BefoforeMethod görevi görür
   @amazonspace
   Scenario: TC01_Amazon İphone search Testi
     And iphone icin arama yapar

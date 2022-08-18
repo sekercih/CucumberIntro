@@ -4,6 +4,8 @@ Feature: Parametre ile istenen sayfaya gitme
 
     Given kullanici amazon sayfasına gider
 
+    #Given kullanici google sayfasına gider
+
  @n11
     Scenario: TC06 parametre ile istenen sayfaya gitme
       Given kullanici "N11URL" sayfasina gider

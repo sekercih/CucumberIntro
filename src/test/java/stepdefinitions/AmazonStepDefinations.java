@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.AmazonPage;
@@ -16,27 +17,24 @@ public class AmazonStepDefinations {
     public void kullanici_amazon_sayfasına_gider() {
         Driver.getDriver().get(ConfigurationReader.getProperty("AmazonURL"));
     }
-    @Given("iphone icin arama yapar")
-    public void iphone_icin_arama_yapar() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+ 
     @Then("sonuclarin iphone icerdiğini test eder")
     public void sonuclarin_iphone_icerdiğini_test_eder() {
+
         amazonPage.aramaKutusu.sendKeys("iphone"+ Keys.ENTER);
     }
     @Given("teapot icin arama yapar")
     public void teapot_icin_arama_yapar() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        amazonPage.aramaKutusu.sendKeys("teapot"+ Keys.ENTER);
     }
     @Then("sonuclarin tea pot icerdiğini test eder")
     public void sonuclarin_tea_pot_icerdiğini_test_eder() {
         String sonuc=amazonPage.sonucIcerigi.getText();
-        Assert.assertTrue(sonuc.contains("iphone"));
+        Assert.assertTrue(sonuc.contains("teapot"));
     }
     @Given("flower icin arama  yapar")
     public void flower_icin_arama_yapar() {
+
         amazonPage.aramaKutusu.sendKeys("flower",Keys.ENTER);
     }
     @Then("sonuclarin  flower icerdigini  test eder.")
@@ -62,5 +60,11 @@ public class AmazonStepDefinations {
     public void sayfayi_kapatir() {
         Driver.closeDriver();
     }
+
+    @And("iphone icin arama yapar")
+    public void iphoneIcinAramaYapar() {
+        amazonPage.aramaKutusu.sendKeys("iphone",Keys.ENTER);
+    }
+
 
 }
