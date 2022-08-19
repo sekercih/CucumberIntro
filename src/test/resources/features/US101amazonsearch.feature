@@ -1,3 +1,4 @@
+@amazonstart
 Feature: US101_amazon_search
 
   Scenario: TC01_Amazon Search Test

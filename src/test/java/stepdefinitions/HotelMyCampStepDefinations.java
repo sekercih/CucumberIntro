@@ -37,4 +37,15 @@ hmcPage.passwordTextBox.sendKeys(ConfigurationReader.getProperty(password));
     public void girisYapilamadiginiTestEder() {
         Assert.assertTrue(hmcPage.girisYapilamadiYaziElementi.isDisplayed());
     }
+
+    @And("password olarak {string} girmeli")
+    public void passwordOlarakGirmeli(String password) {
+        hmcPage.passwordTextBox.sendKeys(password);
+    }
+
+    @And("kullanici adi olarak {string} girmeli")
+    public void kullaniciAdiOlarakGirmeli(String username) {
+        hmcPage.usernameTextBox.sendKeys(username);
+    }
+
 }
