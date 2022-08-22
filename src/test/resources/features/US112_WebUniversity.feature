@@ -1,4 +1,4 @@
-@Webu
+@Webu @testparalel2
 Feature: US112 WebUniversity Window Handle
 
   Scenario Outline: TC17 Reusuble Methots ile window handle

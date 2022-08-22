@@ -1,4 +1,4 @@
-@Editor
+@Editor @testparalel1
 Feature: US110 Scenario Outline ile editör database sayfasina kayit
 
 

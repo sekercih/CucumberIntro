@@ -1,4 +1,4 @@
-@amazontum
+@amazontum @paralel2 @paralel8 @paralel5 @paralel3
 Feature: US102 Backgroun ile amazon search testi
 
   Background: amazon sayfasina gider

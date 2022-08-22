@@ -1,3 +1,4 @@
+@testparalel1
 Feature: US108 Pozitif login test
 @hotel
   Scenario: TC11 Pozitive login

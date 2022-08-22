@@ -71,3 +71,18 @@ public class AmazonStepDefinations {
 //! **********************************************************************************
 
 }
+
+/*
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.1</version>
+<configuration>
+<source>1.7</source>
+<target>1.7</target>
+<fork>true</fork>
+<executable>C:\Program
+Files\jdk-11\bin\javac</executable>
+</configuration>
+</plugin>
+
+ */
