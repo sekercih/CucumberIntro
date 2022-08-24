@@ -1,3 +1,4 @@
+@amazonstart @paralel1
 Feature: US101_amazon_search
 
   Scenario: TC01_Amazon Search Test
@@ -12,6 +13,8 @@ Feature: US101_amazon_search
     Given kullanici amazon sayfasına gider
     And flower icin arama  yapar
     Then sonuclarin  flower icerdigini  test eder.
+
+
 
 
 

@@ -1,10 +1,10 @@
-@amazontum
+@amazontum @paralel2
 Feature: US102 Backgroun ile amazon search testi
 
   Background: amazon sayfasina gider
     Given kullanici amazon sayfasına gider
-
-  @amazonspace
+#Background BefoforeMethod görevi görür
+  @amazonspace1
   Scenario: TC01_Amazon İphone search Testi
     And iphone icin arama yapar
     Then sonuclarin iphone icerdiğini test eder
